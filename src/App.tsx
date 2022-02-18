@@ -15,6 +15,8 @@ function App() {
   return (
     <>
       <Header />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
+      
       <div className={styles.container}>
         <div className={styles.liffIdBox}>
           <Input
