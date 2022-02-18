@@ -4,9 +4,11 @@ import styles from './App.module.css'
 import Header from './components/Header'
 import Snippet from './components/Snippet'
 import Input from './components/Input'
+import VConsole from 'vconsole';
 
 function App() {
   let isLoggedIn = false
+  const vConsole = new VConsole();
   try {
     isLoggedIn = liff.isLoggedIn()
   } catch (e) {
@@ -15,8 +17,6 @@ function App() {
   return (
     <>
       <Header />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
-      
       <div className={styles.container}>
         <div className={styles.liffIdBox}>
           <Input
@@ -57,6 +57,7 @@ function App() {
           version="2.0"
           docUrl="https://developers.line.biz/en/reference/liff/#get-os"
           runner={async () => {
+            console.log('Hello world' + 'getOS');
             return liff.getOS()
           }}
         />
