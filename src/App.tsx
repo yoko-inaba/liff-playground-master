@@ -10,6 +10,7 @@ function App() {
   let isLoggedIn = false
   const vConsole = new VConsole();
   try {
+    alert('aiueo')
     console.log('aaaaaaaaaaaa')
     isLoggedIn = liff.isLoggedIn()
   } catch (e) {
