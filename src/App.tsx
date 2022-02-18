@@ -4,8 +4,10 @@ import styles from './App.module.css'
 import Header from './components/Header'
 import Snippet from './components/Snippet'
 import Input from './components/Input'
+import dotenv from 'dotenv'
 
 function App() {
+  dotenv.config({path:'../.env'});
   let isLoggedIn = false
   try {
     isLoggedIn = liff.isLoggedIn()
