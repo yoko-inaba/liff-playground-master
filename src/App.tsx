@@ -4,12 +4,13 @@ import styles from './App.module.css'
 import Header from './components/Header'
 import Snippet from './components/Snippet'
 import Input from './components/Input'
-import VConsole from 'vconsole';
+import VConsole from 'vconsole'
 
 function App() {
   let isLoggedIn = false
   const vConsole = new VConsole();
   try {
+    console.log('aaaaaaaaaaaa')
     isLoggedIn = liff.isLoggedIn()
   } catch (e) {
     console.log(e)
@@ -57,7 +58,6 @@ function App() {
           version="2.0"
           docUrl="https://developers.line.biz/en/reference/liff/#get-os"
           runner={async () => {
-            console.log('Hello world' + 'getOS');
             return liff.getOS()
           }}
         />
