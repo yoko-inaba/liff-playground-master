@@ -3,6 +3,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
+import dotenv from 'dotenv'
+
+dotenv.config({path:'../.env'});
 
 liff
   .init({ liffId: process.env.REACT_APP_LIFF_ID || '' })
