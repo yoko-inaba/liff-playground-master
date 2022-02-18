@@ -181,7 +181,7 @@ function App() {
             [
               {
                 type: 'text',
-                text: 'Hello, World!!!!!!!!!!!',
+                text: 'Hello, World!!!!!!!!!!!' + process.env.REACT_APP_FIREBASE_APP_ID,
               },
             ],
             null,
